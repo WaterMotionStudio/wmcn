@@ -7,9 +7,9 @@ description: |
   Reflection of Imagination <br>
   <b> We work for nothing </b> <br>
   <b> Only the game and its audience </b> <br>
-owner: Your Name # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+owner: WaterMotion Studio # or company name
+first_published: 2021 # if migrating another site, the year of your first publish
+email: watermotiongames@gmail.com
 baseurl: "/spectral" # the subpath of your site, e.g. /blog
 url: "http://watermotionstudio.github.io" # the base hostname & protocol for your site
 social:
@@ -18,7 +18,7 @@ social:
   linkedin-square: https://linkedin.com/in/<username>
   facebook-official: https://facebook.com/<username>
   google-plus-square: https://plus.google.com/u/0/+<username>
-  #email: /contact/
+  email: watermotiongames@gmail.com
   #flickr:
   #instagram:
   #youtube-square:
