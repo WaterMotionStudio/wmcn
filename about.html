@@ -2,5 +2,46 @@
 layout: aboutus
 title: About Us
 ---
+<style>
+  {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
 <h3> <center><b> WaterMotion Studio has a team consisting of only 2 members. </b> <center> </h3>
+  <p> &nbsp</p>
+  <h5> Our Development Team </h5>
+  <p> &nbsp</p>
+  <div class="container">
+  <img src="https://cdn.discordapp.com/attachments/452773131904483329/861472763856289792/MKG.jpg" alt="Avatar" class="image">
+  <div class="overlay">Maverick</div>
+</div>
   
