@@ -1,18 +1,20 @@
-     function showPass(form){
-        
-       var user=form.username.value;
-        var pass=form.pwd.value;
-        
-        var user1="admin"
-        var pass1="wearyisthebestemote"
-        
-        if(user==user1 && pass==pass1){
-         
-          window.open="elements.html";
-        }
-        else
-          window.open="intranet.html";
-        
-      }
-      
-      
+var objPeople = [
+     {
+          username:"admin",
+          password:"testingadmin"
+     }
+]
+
+function getInfo() {
+     var username = document.getElementById("username").value
+     var password = document.getElementById("password").value
+     
+     for(i=0;i<objPeople.length;i++){
+          if (username == objPeople[i].username && password == objPeople[i].password){
+               console.log(username + "is logged in!");
+               window.location.href="/https://watermotionstudio.github.io/wm/elements.html";
+          }else{
+               console.log("incorrect username or password")
+               window.location.href="https://watermotionstudio.github.io/wm/intranet.html";
+     }
+}
