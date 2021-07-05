@@ -13,8 +13,10 @@ function getInfo() {
           if (username == objPeople[i].username && password == objPeople[i].password){
                console.log(username + "is logged in!");
                window.location.href="/https://watermotionstudio.github.io/wm/elements.html";
+               return;
           }else{
                console.log("incorrect username or password")
                window.location.href="https://watermotionstudio.github.io/wm/intranet.html";
+               return;
      }
 }
