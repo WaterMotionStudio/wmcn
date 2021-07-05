@@ -2,65 +2,48 @@
 layout: page
 title: Intranet
 ---
-<?php
-session_start();
-if(isset($_POST('submit_pass']) && $_POST['pass'])
-{
-$pass=$_POST['pass'];
-if($pass=="wearyisthebestemote")
-{
-$_SESSION['password']=$pass;
-}
-else
-{
-$error="Incorrect Password, please try again.";
-}
-}
-if(isset($_POST('page_layout']))
-{
-unset($_SESSION['password']);
-}
-?>
 
 <html>
   
-  <head>
-  <title>Intranet</title>
-  <p>Password required to enter</p>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  </head>
-  <body>
-    <div id="wrapper">
+  <head>
+    
+    <title></title>
+    
+    
+    <script language="JavaScript">
+    
+      function showPass(form){
+        
+       var user=form.username.value;
+        var pass=form.pwd.value;
+        
+        var user1="admin"
+        var pass1="wearyisthebestemote"
+        
+        if(user==user1 && pass==pass1){
+         
+          window.open="elements.html";
+        }
+        else
+          window.open="intranet.html";
+        
+      }
       
-      <?php
-if($_SESSION['password']=="wearyisthebestemote"}
-{
-
-?>
-      <h1> testing </h1>
-      <p> hello </p>
-      <br>
-      <form method="post" action="" id=“logout_form">
-              <input type="submit" name="page_logout" value="Logout">
-       </form>
-       <?php
-       }
-else
-        {
-      ?>
-      <form method="post" action="" id="login_form">
-       <h1>Login To Proceed</h1>
-         <input type="password" name="pass" placeholder="*****">
-          <input type="submit" name="submit_pass" value="Submit">
-           <p>
-    <font style="color:grey;"><?php echo $error;?></font>
-         </p>
-           </form>
-      <?php
-              }
-   ?>                                          
-    </div>
+      
+    </script>
+    
+  </head>
+  
+  <body>
+    
+    
+    <form>
+      Username: <input type="text" name="username" /><br ><br />
+      Password: <input type="password" name="pwd" /><br /><br />
+      <input type="button" value="Log In" onclick="" />
+      
+    </form>
     
   </body>
   
