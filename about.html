@@ -35,13 +35,41 @@ title: About Us
 .container:hover .overlay {
   opacity: 1;
 }
+  {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 <h3> <center><b> WaterMotion Studio has a team consisting of only 2 members. </b> <center> </h3>
   <p> &nbsp</p>
   <h5> Our Development Team </h5>
   <p> &nbsp</p>
+  <div class="row">
+    <div class="column">
   <div class="container">
   <img src="https://cdn.discordapp.com/attachments/452773131904483329/861472763856289792/MKG.jpg" alt="Avatar" class="image">
   <div class="overlay">Maverick</div>
 </div>
+    </div>
+    <div class="column">
+      <div class="container">
+  <img src="https://cdn.discordapp.com/attachments/452773131904483329/861472763856289792/MKG.jpg" alt="Avatar" class="image">
+  <div class="overlay">relik</div>
+</div>
+    </div>
+  </div>
+  
+  
   
