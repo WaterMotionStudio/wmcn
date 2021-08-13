@@ -9,7 +9,7 @@ description: |
   <b> Only the game and its audience </b> <br>
 owner: WaterMotion Studio # or company name
 first_published: 2021 # if migrating another site, the year of your first publish
-email: watermotiongames@gmail.com
+email: watermotionstudio@gmail.com
 baseurl: "/wm" # the subpath of your site, e.g. /blog
 url: "http://watermotionstudio.github.io" # the base hostname & protocol for your site
 social:
