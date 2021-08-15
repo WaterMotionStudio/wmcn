@@ -78,6 +78,32 @@
 		}
 	}
 
+/* Banner + Wrapper (style10) */
+
+	#banner,
+	.wrapper.style10 {
+		background-image: url("../../images/bannertr.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+
+		&:before {
+			background: #000000;
+			content: '';
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.inner {
+			position: relative;
+			z-index: 1;
+		}
+	}
 /* Banner */
 
 	#banner {
