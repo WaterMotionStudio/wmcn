@@ -2,64 +2,98 @@
 layout: contactus
 title: Contact Us
 ---
+<!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: centre;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-bpx;
+  body{
+    font-family: "FontAwesome";
+  }
+  section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    width: 90%
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    border-radius: 0px;
+    margin-bottom: 20px;
+  }
+  .form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .form-group input,
+  .form-group textarea{
+    width: 100%;
+    padding: 5px;
+    font-size 10px;
+    border: 1px solid rgba(128, 128,128, 0.199);
+    margin-top: 5px;
+  }
+  textarea{
+    resize:vertical;
+  }
+  button[type="submit"]{
+    width: 100%;
+    bordeR: none;
+    outline: none;
+    padding: 20px;
+    font-size 24px;
+    border-radius: 0px;
+    font-family: "FontAwesome";
+    color: rgb(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  button[type="submit"]:hover{
+    background-color: rgb(214, 226, 236);
+  }
+    
   
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #FFFFFF;
-  padding: 20px;
-}
-</style>
-</head>
-<body>
   
-  <div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-
-    <label for="email">Your Email Address</label>
-    <input type="text" id="email" name="emailaddress" placeholder="Your email so we can contact with you...">    
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="What do you want to say with us?" style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
-</body>
+  
+  </style>
+ 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+        <section>
+          <div class="container">
+            <form action="">
+              
+              <div class="form-group">
+                <label fore="firstname">First Name</label>
+                <input type="text" id="firstname" name"FirstName" placeholder="Your First name...">
+              </div>
+              
+              <div class="form-group">
+                <label fore="lastname">Last Name</label>
+                <input type="text" id="lastname" name="LastName" placeholder="Your Last Name...">
+              </div>
+              
+              <div class="form-group">
+                <label fore="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address that we can contact with...">
+              </div>
+              
+              <div class="form-group">
+                <label fore="message">Your Message for us</label>
+                <textarea name="message" id="message cols="30" rows="10" placeholder="Your Message..."></textarea>
+              </div>
+              
+              <button type="submit">Submit</button>
+              
+        </body>
 </html>
