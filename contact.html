@@ -66,6 +66,29 @@ title: Contact Us
     margin: 0 auto;
     border-radius: 0px;
   }
+  #status.success{
+    background-color: rgb(211, 259, 153);
+    animation: status 4s ease delay forwards;
+  }
+  #status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframe status{
+    0%{
+      opacity: 1;
+      pointer-events: all;
+    }
+    90%{
+            opacity: 1;
+      pointer-events: all;
+    }
+    100%{
+      opacity: 0;
+      pointer-events: none;
+    }
+    
   </style>
  
 <head>
@@ -94,5 +117,11 @@ title: Contact Us
               <div class="form-group">
                 <label fore="message">Your Message for us</label>
                 <textarea name="message" id="message cols="30" rows="10" placeholder="Your Message..."></textarea>
-              </div>
+                                                                                                      </div>
+                                                                                                      <button type="submit">Submit your message</button>
+                                                                                                                           </form>
+                                                                                                                           </div>
+                                                                                                                           <div id="status" class="success">Thank you for your message!</div>
+                                                                                                                           </section>
+                                                                                                                           </body>
 </html>
