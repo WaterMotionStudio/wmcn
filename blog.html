@@ -6,20 +6,48 @@ title: WaterMotion Blog
 <style>
   .post-slider {
     border: 1px solid red;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
   }
   .post-slider .post-wrapper {
-    width: 84%;
+    width: calc(250px * 5);
     height: 350px;
     margin: 0px auto;
     border: 1px dashed red;
+    
   }
   .post-slider .post-wrapper .post{
     height: 350px;
     width: 300px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    padding: 15px;
   }
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="blog.js"></script>
+  .post-slider: :before,
+  .post-slider: :after{
+    background: linear-gradient(to right, white, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%
+    z-index: 2;
+  }
+  .post-slider: :before{
+    left: 0;
+    top: 0;
+  }
+  .post-slider: :after{
+    right: 0;
+    top: 0;
+    transform: rotate2(100deg);
+  }
+  
+
 </style>
 <body>
 
