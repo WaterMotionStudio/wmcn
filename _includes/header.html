@@ -8,8 +8,11 @@
         <div id="menu">
           <ul>
             <a href="/wm/index.html">Home</a></li>
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
+            <li><a href="/ychrimsons-chronicles.html">Chrimsons Chronicles</a></li>
+            <li><a href="/ztuberroyale">Tuber Royale</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog.html">WaterMotion Blog</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
             <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
             {% endif %}
             {% endfor %}
