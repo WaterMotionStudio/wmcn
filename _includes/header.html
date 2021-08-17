@@ -10,7 +10,7 @@
             <li><a href="index.html">Home</a></li>
             {% for my_page in site.pages %}
             {% if my_page.title %}
-            {% except blogpost1.html %}
+            {% not blogpost1.html %}
             <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
             {% endif %}
             {% endfor %}
